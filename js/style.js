@@ -16,6 +16,16 @@ $(function() {
       currentIndex = nextIndex;
     }
   });
+
+  $(".phone").click(function() {
+    $(".phone").css("display", "none");
+    $(".pc-header").css("display", "block");
+  });
+
+  $(".pc-header").click(function() {
+    $(".pc-header").css("display", "none");
+    $(".phone").css("display", "block");
+  });
 });
 
 $(window).on('load scroll', function (){
