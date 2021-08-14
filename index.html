@@ -18,26 +18,29 @@
   <header>
     <div id="top" class="top">
       <div class="header">
-        <div class="header-left">
-          <a href="#top" target="_top">Dbar</a>
+        <div class="header-list">
+          <div class="header-left">
+            <a href="#top" target="_top">Dbar</a>
+          </div>
+          <div class="header-right">
+            <p id="button" class="phone">≡</p>
+            <ul id="list" class="pc-header">
+              <li>
+                <a href="#menu" target="_top">Menu</a>
+              </li>
+              <li>
+                <a href="#map" target="_top">Map</a>
+              </li>
+              <li>
+                <a href="#contact" target="_top">Contact</a>
+              </li>
+              <li>
+                <a href="#share" target="_top">Share</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="header-right">
-          <ul>
-            <li>
-              <a href="#menu" target="_top">Menu</a>
-            </li>
-            <li>
-              <a href="#map" target="_top">Map</a>
-            </li>
-            <li>
-              <a href="#contact" target="_top">Contact</a>
-            </li>
-            <li>
-              <a href="#share" target="_top">Share</a>
-            </li>
-          </ul>
-        </div>
-        <p class="fade">非日常を。</p>
+        <p class="copy fade">非日常を。</p>
       </div>
     </div>
     
@@ -72,7 +75,8 @@
             <li><p>nuts/ナッツ</p></li>
             <li><p>cheese/チーズ</p></li>
             <li><p>chocolate/チョコレート</p></li>
-            <li><p>dairy snacks/日替わりおつまみ</p></li>
+            <li class="pc"><p>dairy snacks/日替わりおつまみ</p></li>
+            <li class="tab"><p>dairy snacks/<br>日替わりおつまみ</p></li>
             <li><p>etc...</p></li>
           </ul>
         </div>
@@ -85,7 +89,7 @@
     <div id="map" class="map">
       <h1>Map/マップ</h1>
       <div class="map-main fadeIn">
-        <div class="map-">
+        <div class="gmap">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.747798533258!2d139.7432442150083!3d35.658584838821604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1628861265759!5m2!1sja!2sjp" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="map-right">
@@ -101,8 +105,10 @@
         <ul>
           <li><p class="c-left">お名前：</p><input type="text"></li>
           <li><p class="c-left">性別：</p>
-            <input class="check" type="radio"><p>Man</p>
-            <input class="check" type="radio"><p>Woman</p>
+            <div class="sex-check">
+              <input class="check" type="radio"><p class="sex">Man</p>
+              <input class="check" type="radio"><p class="sex">Woman</p>
+            </div>
             </p>
           </li>
           <li><p class="c-left">電話番号：</p><input type="text"></li>
