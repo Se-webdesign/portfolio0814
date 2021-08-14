@@ -16,7 +16,10 @@ $(function() {
       currentIndex = nextIndex;
     }
   });
+  
+});
 
+if (window.matchMedia('(max-width: 599px)').matches) {
   $(".phone").click(function() {
     $(".phone").css("display", "none");
     $(".pc-header").css("display", "block");
@@ -26,7 +29,9 @@ $(function() {
     $(".pc-header").css("display", "none");
     $(".phone").css("display", "block");
   });
-});
+} else {
+
+}
 
 $(window).on('load scroll', function (){
 
